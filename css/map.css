@@ -1,0 +1,339 @@
+@charset "gb2312";
+*{
+    margin: 0;
+    padding: 0;
+}
+.Map{
+    left: 0;
+    position: absolute;
+    top: 140px;
+    z-index: 1;
+      background: #fafafa;
+      width: 100%;
+      height: 445px;
+}
+
+.mapLF{
+    position: absolute;
+    margin: auto;
+    left: 20%;
+}
+/*地图上的大洲*/
+.wordMap .NorthAmerica {
+    background: url("../images/map/beimei.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    height: 180px;
+    left: 0;
+    position: absolute;
+    top: 40px;
+    width: 291px;
+}
+.wordMap .NorthAmerica:hover{
+    background: url("../images/map/beimeion.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+
+}
+.wordMap a {
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+}
+a {
+    color: #396a94;
+    text-decoration: none;
+}
+
+.wordMap .NorthAmerica i {
+    color: #2b2b2b;
+    font-family: 宋体;
+    font-size: 14px;
+    font-style: normal;
+    left: 70px;
+    position: absolute;
+    top: 65px;
+}
+.wordMap .Europe {
+    background: url("../images/map/ozhou.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    height: 103px;
+    left: 260px;
+    position: absolute;
+    top: 45px;
+    width: 153px;
+}
+.wordMap .Europe i {
+    color: #2b2b2b;
+    font-family: 宋体;
+    font-size: 14px;
+    font-style: normal;
+    left: 90px;
+    position: absolute;
+    top: 50px;
+}
+.wordMap .Europe:hover{
+    background: url("../images/map/ozhouon.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+ }
+ .wordMap .Asia {
+    background: url("../images/map/yazhou.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    height: 219px;
+    left: 355px;
+    position: absolute;
+    top: 46px;
+    width: 275px;
+}
+
+.wordMap .Asia i {
+    color: #2b2b2b;
+    font-family: 宋体;
+    font-size: 14px;
+    font-style: normal;
+    left: 125px;
+    position: absolute;
+    top: 55px;
+}
+.wordMap .Asia:hover {
+    background: url("../images/map/yazhouon.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.wordMap .SouthAmerica {
+    background: url("../images/map/nanmei.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    height: 171px;
+    left: 115px;
+    position: absolute;
+    top: 203px;
+    width: 111px;
+}
+.wordMap .SouthAmerica i {
+    color: #2b2b2b;
+    font-family: 宋体;
+    font-size: 14px;
+    font-style: normal;
+    left: 40px;
+    position: absolute;
+    top: 50px;
+}
+.wordMap .SouthAmerica:hover {
+    background: url("../images/map/nanmeion.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.wordMap .Africa {
+    background: url("../images/map/feizhou.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    height: 181px;
+    left: 257px;
+    position: absolute;
+    top: 142px;
+    width: 160px;
+}
+
+.wordMap .Africa i {
+    color: #2b2b2b;
+    font-family: 宋体;
+    font-size: 14px;
+    font-style: normal;
+    left: 70px;
+    position: absolute;
+    top: 50px;
+}
+.wordMap .Africa:hover {
+    background: url("../images/map/feizhouon.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.wordMap .Australia {
+    background: url("../images/map/dayang.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    height: 117px;
+    left: 540px;
+    position: absolute;
+    top: 230px;
+    width: 132px;
+}
+.wordMap .Australia i {
+    color: #2b2b2b;
+    font-family: 宋体;
+    font-size: 14px;
+    font-style: normal;
+    left: 30px;
+    position: absolute;
+    top: 50px;
+}
+.wordMap .Australia:hover {
+    background: url("../images/map/dayangon.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.wordMap .Asia .AsiaCn {
+    background: url("../images/map/zhongguo.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    height: 83px;
+    left: 119px;
+    position: absolute;
+    top: 62px;
+    width: 101px;
+}
+.wordMap .Asia .AsiaCn i {
+    color: #2b2b2b;
+    font-family: 宋体;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    left: 44px;
+    position: absolute;
+    top: 37px;
+}
+.wordMap .Asia .AsiaCn:hover {
+    background: url("../images/map/zhongguoon.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+/*地图 各大洲的背景*/
+/*.dMapbg104 {
+    background-image: url("bg_beimei.png");
+    left: 120px;
+    top: 33px;
+}*/
+
+.sph1 {
+    display: none;
+}
+.dMapLayer {
+    background-color: #fff;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid #e5e5e5;
+    position: absolute;
+    width: 396px;
+    z-index: 11;
+}
+.dMapbg101 {
+    background-image: url("../images/map/bg_yazhou.png");
+    left: 55px;
+    top: 35px;
+}
+.dMapbg102 {
+    background-image: url("../images/map/bg_ozhou.png");
+    left: 400px;
+    top: 20px;
+}
+.dMapbg103 {
+    background-image: url("../images/map/bg_feizhou.png");
+    left: 370px;
+    top: 120px;
+}
+.dMapbg104 {
+    background-image: url("../images/map/bg_beimei.png");
+    left: 120px;
+    top: 33px;
+}
+.dMapbg105 {
+    background-image: url("../images/map/bg_nanmei.png");
+    left: 210px;
+    top: 180px;
+}
+.dMapbg106 {
+    background-image: url("../images/map/bg_dayang.png");
+    left: 150px;
+    top: 180px;
+}
+.dMapLayer i.bor41 {
+    background: url("../images/map/bor.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 80px;
+    right: -31px;
+    top: 0;
+    width: 31px;
+}
+
+.dMapLayer i.borLT {
+    background: url("../images/map/borLT.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 80px;
+    left: -31px;
+    top: 0;
+    width: 31px;
+}
+
+.dMapLayer i {
+    position: absolute;
+}
+.dMapList {
+    margin-top: 43px;
+    padding: 2px 0 0;
+}
+
+.clear:after, .ltClear:after, .clearfix:after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+}
+.clear:after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+}
+.clear:after, .ltClear:after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+}
+.dMapList dl, .dMapList dl a {
+    color: #666;
+    font-size: 12px;
+    font-style: normal;
+}
+.dMapList dl {
+    border-bottom: 1px solid #f5f5f5;
+    clear: both;
+    font-size: 12px;
+    height: 27px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.dMapList dt {
+    border-right: 1px solid #f5f5f5;
+    font-weight: bold;
+    line-height: 18px;
+    margin-right: 5px;
+    padding-right: 10px;
+    text-align: right;
+    width: 63px;
+}
+.dMapList dt, .dMapList dd {
+    float: left;
+    height: 18px;
+    overflow: hidden;
+    padding: 5px 10px 4px;
+}
+
+.dMapList dd {
+    margin-right: 2px;
+}
+
+/* heartPic */
+.heartPic{width:749px;height:760px;margin:60px auto 0 auto; font:12px/20px "Microsoft Yahei","SimSun",Arial,sans-serif; background:#fafafa;}
+.heartPic ul{float:left;width:749px;}
+.heartPic ul li{float:left;width:100px;height:100px;padding:2px;cursor:pointer;}
+.heartPic ul li.on{z-index:99;}
+.heartPic ul li.on .in{position:relative;left:-50px;top:-50px;background:none repeat scroll 0 0 rgba(255, 153, 0, 0.8) !important}
+
+.heartPic ul li .pTxt{display:none;width:100px;height:40px;text-align:center;color:#fff;position: relative;top:-20px;}
+.heartPic ul li .pTxt .p1{
+    font-size: 18px;
+    color: #2b2b2b;
+    background: rgba(255,255,255,0.5)  !important;
+    width:100%;height:20px;
+    position: relative;
+    display: inline-block;
+}
+.heartPic ul li .pTxt .p2{
+    background: rgba(255, 153, 0, 1)  !important;
+    font-size: 12px;
+    color: #fff;
+    top: 0;
+    width:100%;height:20px;
+    position: relative;
+    display: inline-block;
+}
+.heartPic .showDiv{display:block;}
+

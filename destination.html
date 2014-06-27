@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>目的地</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/map.css">
+<script type="text/javascript" src="js/jquery-1.11.0.min.js" ></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/script.js"></script> 
+<script type="text/javascript" src="js/tms-0.3.js"></script>
+<script type="text/javascript" src="js/tms_presets.js"></script>
+<script type="text/javascript" src="js/jcarousellite.js"></script>
+
+ 
+</head>
+<body id="page1">
+<div class="body1">
+	<div class="body2">
+		<div class="main">
+<!-- header -->
+			<header>
+				<div class="wrapper">
+				<h1><a href="index.html" id="logo">爱生活，爱旅游</a></h1>
+				<div>
+					<ul id="menu">
+						<li id="nav1"><a href="index.html">首页<span>Home</span></a></li>
+						<li id="nav2"  class="active"><a href="destination.html">目的地<span>Destination</span></a></li>
+						<li id="nav3"><a href="#">推荐<span>Recommend</span></a></li>
+						<li id="nav4"><a href="#">预约<span>Order</span></a></li>
+						<li id="nav5"><a href="#">联系我们<span>Contact us</span></a></li>
+					</ul>
+				</div>
+				</div>
+				<div class="wrapper Map" >
+					<div class="mapLF">
+					<div class="wordMap" >
+
+		<a href="#" class= "NorthAmerica" data-d="name104"><i>北美洲</i></a>
+		<a href="#" class="Europe" data-d="name102" ><i>欧洲</i></a>
+		<a class="Asia" data-d="name101" href="#"><i>亚洲</i>
+			<b class="AsiaCn" data-d="name107"><i>中国</i></b>
+		</a>
+		<a class="SouthAmerica" data-d="name105" href="#"><i>南美洲</i></a>
+		<a class="Africa" data-d="name103" href="#"><i>非洲</i></a>
+		<a class="Australia" data-d="name106" href="#"><i>大洋洲</i></a>
+	</div>
+	<div class="dMapLayer dMapbg101 sph1 name101"  name="亚洲" style="width: 396px; height: 185px;">
+		<div class="dMapLayerCon">
+		<i class="bor41"></i>
+			<div class="dMapList">
+			<dl class="clear">
+		 	<dt><a title="" target="_blank" href="#">日本</a></dt>
+				<dd><a title="" target="_blank" href="#">东京</a></dd>
+				<dd><a title="" target="_blank" href="#">大阪</a></dd>
+				<dd><a title="" target="_blank" href="#">冲绳</a></dd>
+				<dd><a title="" target="_blank" href="#">富士山</a></dd>
+				<dd><a title="" target="_blank" href="#">北海道</a></dd>
+			</dl>
+			<dl class="clear">
+			<dt><a title="" target="_blank" href="#">韩国</a></dt>
+				<dd><a title="" target="_blank" href="#">首尔</a></dd>
+				<dd><a title="" target="_blank" href="#">济州岛</a></dd>
+				<dd><a title="" target="_blank" href="#">釜山</a></dd>
+				<dd><a title="" target="_blank" href="#">京畿道</a></dd>
+				<dd><a title="" target="_blank" href="#">明洞</a></dd>
+			</dl>
+			<dl class="clear">
+			<dt><a title="" target="_blank" href="#">泰国</a></dt>
+				<dd><a title="" target="_blank" href="#">曼谷</a></dd>
+				<dd><a title="" target="_blank" href="#">清迈</a></dd>
+				<dd><a title="" target="_blank" href="#">芭提雅</a></dd>
+				<dd><a title="" target="_blank" href="#">普吉岛</a></dd>
+				<dd><a title="" target="_blank" href="#">苏梅岛</a></dd>
+			</dl>
+			<dl class="clear">
+			<dt><a title="" target="_blank" href="#">越南</a></dt>
+				<dd><a title="" target="_blank" href="#">胡志明市</a></dd>
+				<dd><a title="" target="_blank" href="#">河内市</a></dd>
+				<dd><a title="" target="_blank" href="#">下龙湾</a></dd>
+				<dd><a title="" target="_blank" href="#">岘港</a></dd>
+				<dd><a title="" target="_blank" href="#">西贡河 </a></dd>
+			</dl>
+			<dl class="clear">
+			<dt><a title="" target="_blank" href="#">马来西亚</a></dt>
+				<dd><a title="" target="_blank" href="#">吉隆坡</a></dd>
+				<dd><a title="" target="_blank" href="#">沙巴</a></dd>
+				<dd><a title="" target="_blank" href="#">马六甲</a></dd>
+				<dd><a title="" target="_blank" href="#">兰卡威</a></dd>
+				<dd><a title="" target="_blank" href="#">双峰塔</a></dd>
+			</dl>
+			</div>
+		</div>
+	</div>
+	<div class="dMapLayer dMapbg104 sph1 name104" layer-data="" name="北美洲">
+		<div class="dMapLayerCon">
+			<i class="borLT"></i>
+			<div class="dMapList">
+			<dl class="clear">
+				<dt><a title="" target="_blank" href="#">美国</a></dt>
+				<dd><a title="" target="_blank" href="#">纽约</a></dd>
+				<dd><a title="" target="_blank" href="#">华盛顿</a></dd>
+				<dd><a title="" target="_blank" href="#">洛杉矶</a></dd>
+				<dd><a title="" target="_blank" href="#">拉斯维加斯</a></dd>
+				<dd><a title="" target="_blank" href="#">夏威夷州</a></dd>
+			</dl>
+			<dl class="clear">
+				<dt><a title="" target="_blank" href="#">墨西哥</a></dt>
+				<dd><a title="" target="_blank" href="#">墨西哥州</a></dd>
+				<dd><a title="" target="_blank" href="#">尤卡坦州</a></dd>
+				<dd><a title="" target="_blank" href="#">南下加利福尼亚</a></dd>
+			</dl>
+			<dl class="clear">
+				<dt><a title="" target="_blank" href="#">加拿大</a></dt>
+				<dd><a title="" target="_blank" href="#">多伦多</a></dd>
+				<dd><a title="" target="_blank" href="#">温哥华</a></dd>
+				<dd><a title="" target="_blank" href="#">蒙特利尔</a></dd>
+				<dd><a title="" target="_blank" href="#">魁北克省</a></dd>
+				<dd><a title="" target="_blank" href="#">渥太华</a></dd>
+			</dl>
+			<dl class="clear">
+				<dt><a title="" target="_blank" href="#">古巴</a></dt>
+				<dd><a title="" target="_blank" href="#">哈瓦那</a></dd>
+				<dd><a title="" target="_blank" href="#">巴拉德罗海滩</a></dd>
+				<dd><a title="" target="_blank" href="#">圣地亚哥省</a></dd>
+			</dl>
+			<dl class="clear">
+				<dt><a title="" target="_blank" href="#">巴拿马</a></dt>
+				<dd><a title="" target="_blank" href="#">巴拿马城</a></dd>
+			</dl>
+			</div>
+		</div>
+	</div>
+	<div name="欧洲" class="dMapLayer dMapbg102 sph1 name102">
+		<div class="dMapLayerCon">
+			<i class="borLT"></i>
+			<div class="dMapList">						
+			<dl class="clear">							
+				<dt><a title="" target="_blank" href="#">法国</a></dt>                    		
+				<dd><a title="" target="_blank" href="#">巴黎</a></dd>			
+				<dd><a title="" target="_blank" href="#">尼斯</a></dd>			
+				<dd><a title="" target="_blank" href="#">普罗旺斯</a></dd>	
+				<dd><a title="" target="_blank" href="#">卢浮宫</a></dd>		
+				<dd><a title="" target="_blank" href="#">埃菲尔铁塔</a></dd>	
+			</dl>				
+
+			<dl class="clear">							
+				<dt><a title="" target="_blank" href="#">意大利</a></dt>   
+				<dd><a title="" target="_blank" href="#">威尼斯</a></dd>		
+				<dd><a title="" target="_blank" href="#">罗马</a></dd>			
+				<dd><a title="" target="_blank" href="#">佛罗伦萨</a></dd>	
+				<dd><a title="" target="_blank" href="#">米兰</a></dd>			
+				<dd><a title="" target="_blank" href="#">圣马可广场</a></dd>							
+			</dl>			
+
+			<dl class="clear">							
+				<dt><a title="" target="_blank" href="#">德国</a></dt>                    		
+				<dd><a title="" target="_blank" href="#">柏林</a></dd>	
+				<dd><a title="" target="_blank" href="#">慕尼黑</a></dd>		
+				<dd><a title="" target="_blank" href="#">法兰克福</a></dd>	
+				<dd><a title="" target="_blank" href="#">汉堡</a></dd>			
+				<dd><a title="" target="_blank" href="#">柏林墙</a></dd>		
+			</dl>					
+
+			<dl class="clear">	
+				<dt><a title="" target="_blank" href="#">西班牙</a></dt> 		
+				<dd><a title="" target="_blank" href="#">马德里</a></dd>		
+				<dd><a title="" target="_blank" href="#">巴塞罗那</a></dd>	
+				<dd><a title="" target="_blank" href="#">塞维利亚</a></dd>	
+				<dd><a title="" target="_blank" href="#">斗牛场</a></dd>	
+				<dd><a title="" target="_blank" href="#">西班牙广场
+				</a></dd>						
+			</dl>						
+			<dl class="clear">						
+				<dt><a title="" target="_blank" href="#">英国</a></dt>				
+				<dd><a title="" target="_blank" href="#">伦敦</a></dd>                    	
+				<dd><a title="" target="_blank" href="#">爱丁堡</a></dd>		
+				<dd><a title="" target="_blank" href="#">利物浦</a></dd>		
+				<dd><a title="" target="_blank" href="#">大曼彻斯特</a></dd>
+				<dd><a title="" target="_blank" href="#">白金汉宫</a></dd>	
+			</dl>						
+			</div>
+
+		</div>
+	</div>
+	<div name="南美洲" class="dMapLayer dMapbg105 sph1 name105">
+		<div class="dMapLayerCon">
+			<i class="borLT"></i>
+			<div class="dMapList">						
+			<dl class="clear">							
+				<dt><a title="" target="_blank" href="#">阿根廷</a></dt>                    		
+				<dd><a title="" target="_blank" href="#">布宜诺斯艾利斯</a></dd>	
+				<dd><a title="" target="_blank" href="#">女人桥</a></dd>		
+				<dd><a title="" target="_blank" href="#">科隆大剧院</a></dd>
+				<dd><a title="" target="_blank" href="#">老虎洲</a></dd>		
+			</dl>						
+			<dl class="clear">							
+				<dt><a title="" target="_blank" href="#">巴西</a></dt>                    		
+				<dd><a title="" target="_blank" href="#">里约热内卢</a></dd>	
+				<dd><a title="" target="_blank" href="#">圣保罗</a></dd>	
+				<dd><a title="" target="_blank" href="#">亚马逊河</a></dd>	
+			</dl>						
+			<dl class="clear">							
+				<dt><a title="" target="_blank" href="#">秘鲁</a></dt>                    		
+				<dd><a title="" target="_blank" href="#">利马</a></dd>			
+				<dd><a title="" target="_blank" href="#">马丘比丘</a></dd>	
+				<dd><a title="" target="_blank" href="#">库斯科</a></dd>	
+			</dl>					
+			<dl class="clear">							
+				<dt><a title="" target="_blank" href="#">玻利维亚</a></dt> 			
+				<dd><a title="" target="_blank" href="#">乌尤尼盐沼</a></dd>
+			</dl>						
+			<dl class="clear">							
+				<dt><a title="" target="_blank" href="#">智利</a></dt>				
+				<dd><a title="" target="_blank" href="#">圣地亚哥首都</a></dd>  
+				<dd><a title="" target="_blank" href="#">圣地亚哥武器广场</a></dd>                   								
+			</dl>						
+			</div>
+		</div>
+	</div>
+	<div  name="非洲" class="dMapLayer dMapbg103 sph1 name103">
+		<div class="dMapLayerCon">
+			<i class="borLT"></i>
+			<div class="dMapList">						
+			<dl class="clear">							
+				<dt><a title="" target="_blank" href="#">埃及</a></dt>                    		
+				<dd><a title="" target="_blank" href="#">开罗</a></dd>		
+				<dd><a title="" target="_blank" href="#">卢克索</a></dd>		
+				<dd><a title="" target="_blank" href="#">阿斯旺</a></dd>		
+				<dd><a title="" target="_blank" href="#">胡夫金字塔</a></dd>	
+				<dd><a title="" target="_blank" href="#">卢克索神庙</a></dd>					
+			</dl>						
+			<dl class="clear">							
+				<dt><a title="" target="_blank" href="#">肯尼亚</a></dt>                    		
+				<dd><a title="" target="_blank" href="#">内罗毕</a></dd>		
+				<dd><a title="" target="_blank" href="#">东非大裂谷</a></dd>
+				<dd><a title="" target="_blank" href="#">安博塞利</a></dd>		
+				<dd><a title="" target="_blank" href="#">乞力马扎罗山</a></dd>							
+				<dd><a title="" target="_blank" href="#">纳库鲁</a></dd>	
+			</dl>						
+			<dl class="clear">							
+				<dt><a title="" target="_blank" href="#">摩洛哥</a></dt>                    		
+				<dd><a title="" target="_blank" href="#">卡萨布兰卡</a></dd>	
+				<dd><a title="" target="_blank" href="#">马拉喀什</a></dd>	
+				<dd><a title="" target="_blank" href="#">拉巴特</a></dd>		
+				<dd><a title="" target="_blank" href="#">非斯</a></dd>		
+				<dd><a title="" target="_blank" href="#">舍夫沙万</a></dd>
+			</dl>						
+			<dl class="clear">							
+				<dt><a title="" target="_blank" href="#">南非</a></dt> 				
+				<dd><a title="" target="_blank" href="#">开普敦</a></dd>		
+				<dd><a title="" target="_blank" href="#">约翰内斯堡</a></dd>	
+				<dd><a title="" target="_blank" href="#">比勒陀利亚</a></dd>	
+				<dd><a title="" target="_blank" href="#">太阳城</a></dd>	
+				<dd><a title="" target="_blank" href="#">好望角</a></dd>
+			</dl>						
+			<dl class="clear">							
+				<dt><a title="" target="_blank" href="#">津巴布韦</a></dt>			
+				<dd><a title="" target="_blank" href="#">哈拉雷</a></dd>                    
+				<dd><a title="" target="_blank" href="#">瀑布大桥</a></dd>	
+				<dd><a title="" target="_blank" href="#">大津巴布韦遗址</a></dd>													
+			</dl>						
+			</div>
+		</div>
+	</div>
+	<div name="大洋洲" class="dMapLayer dMapbg106 sph1 name106">
+		<div class="dMapLayerCon">
+			<i class="bor41"></i>		
+			<div class="dMapList">						
+			<dl class="clear">							
+				<dt><a title="" target="_blank" href="#">澳大利亚</a></dt>                    	
+				<dd><a title="" target="_blank" href="#">维多利亚洲</a></dd>
+				<dd><a title="" target="_blank" href="#">墨尔本</a></dd>		
+				<dd><a title="" target="_blank" href="#">悉尼</a></dd>			
+				<dd><a title="" target="_blank" href="#">昆士兰州</a></dd>	
+				<dd><a title="" target="_blank" href="#">布里斯班</a></dd>	
+			</dl>						
+			<dl class="clear">							
+				<dt><a title="" target="_blank" href="#">新西兰</a></dt>                    		
+				<dd><a title="" target="_blank" href="#">奥克兰</a></dd>			
+				<dd><a title="" target="_blank" href="#">皇后镇</a></dd>	
+				<dd><a title="" target="_blank" href="#">惠灵顿</a></dd>	
+				<dd><a title="" target="_blank" href="#">花园之城</a></dd>	
+			</dl>						
+			<dl class="clear">							
+				<dt><a title="" target="_blank" href="#">北马里亚纳</a></dt>                    	
+				<dd><a title="" target="_blank" href="#">塞班岛</a></dd>	
+				<dd><a title="" target="_blank" href="#">天宁岛</a></dd>	
+			</dl>						
+			<dl class="clear">							
+				<dt><a title="" target="_blank" href="#">波利尼西亚</a></dt> 			
+				<dd><a title="" target="_blank" href="#">大溪地</a></dd>	
+				<dd><a title="" target="_blank" href="#">茉莉雅海滩</a></dd>	
+				<dd><a title="" target="_blank" href="#">珍珠博物馆</a></dd>														
+			</dl>						
+			<dl class="clear">							
+				<dt><a title="" target="_blank" href="#">斐济</a></dt>				
+				<dd><a title="" target="_blank" href="#">中央大区</a></dd>   
+				<dd><a title="" target="_blank" href="#">沉睡巨人公园</a></dd>                      											
+			</dl>						
+			</div>
+		</div>
+	</div>			
+
+			</div>	</div>
+			</header>
+<!-- header end-->
+		</div>
+	</div>
+	</div>
+	<div class="body3">
+		<div class="main">
+<!-- content -->
+			<article id="content">
+				<div class="wrapper">
+					<h2 class="under">每个人都是生活的导演</h2>
+					<div class="heartPic">
+	<ul>
+		<li></li>
+		<li>
+        	<div class="in">
+            	<img width="100" height="100" src="images/scenery/yili.gif" />
+                <p class="pTxt"><span class="p1">伊利</span><br/>
+                    <span class="p2">哈萨克族人守着日光之城的馈赠</span>
+                    <span class="p2"> 世界仿佛离他们很远</span>
+                </p>
+              
+            </div>
+        </li>
+		<li>
+        	<div class="in">
+            	<img width="100" height="100" src="images/scenery/hulunbeier.jpg" />
+                <p class="pTxt"><span class="p1">呼伦贝尔</span><br/>
+                    <span class="p2">世界四大草原之一 </span><br/>
+                    <span class="p2">盛夏鲜花怒放  扑向呼伦贝尔那一片金黄</span>
+                </p>
+            </div>
+        </li>
+		<li></li>
+		<li>
+        	<div class="in">
+            	<img width="100" height="100" src="images/scenery/dongtinghu.jpg" />
+               <p class="pTxt"><span class="p1">洞庭湖</span><br/>
+                    <span class="p2">中国五大淡水湖之一</span><br/>
+                    <span class="p2"> 接天莲叶无穷碧，映日荷花别样红</span>
+                </p>
+            </div>
+        </li>
+		<li>
+        	<div class="in">
+            	<img width="100" height="100" src="images/scenery/jizhoudao.jpg" />
+               <p class="pTxt"><span class="p1">济州岛</span><br/>
+                    <span class="p2">韩国最大的岛屿</span><br/>
+                    <span class="p2"> 面朝大海 山花烂漫</span>
+                </p>
+            </div>
+        </li>
+		<li></li>
+	</ul>
+	<ul>
+		<li>
+        	<div class="in">
+            	<img width="100" height="100" src="images/scenery/yidali.jpg" />
+                <p class="pTxt"><span class="p1">意大利</span><br/>
+                    <span class="p2">当亚平宁半岛上空唱响马梅利之歌时</span><br/>
+                    <span class="p2"> 旅人找到了终点</span>
+                </p>
+            </div>
+        </li>
+		<li>
+        	<div class="in">
+        		<img width="100" height="100" src="images/scenery/moxige.jpg" />
+                 <p class="pTxt"><span class="p1">墨西哥</span><br/>
+                    <span class="p2">疯狂世界</span><br/>
+                    <span class="p2"> 这里的毒枭资产甚至超越比尔盖茨</span>
+                </p>
+            </div>
+        </li>
+		<li>
+        	<div class="in">
+            	<img width="100" height="100" src="images/scenery/linzhi.jpg" />
+                 <p class="pTxt"><span class="p1">林芝</span><br/>
+                    <span class="p2">西藏的江南</span><br/>
+                    <span class="p2"> 世界上最深的峡谷—雅鲁藏布江大峡谷</span>
+                </p>
+            </div>
+        </li>
+		<li>
+        	<div class="in">
+            	<img width="100" height="100" src="images/scenery/eluosi.jpg" />
+                <p class="pTxt"><span class="p1">俄罗斯</span><br/>
+                    <span class="p2">在这片古老的东欧大陆上</span><br/>
+                    <span class="p2"> 有着最绚丽缤纷的色彩</span>
+                </p>
+            </div>
+        </li>
+		<li>
+        	<div class="in">
+            	<img width="100" height="100" src="images/scenery/qinghaihu.jpg" />
+                <p class="pTxt"><span class="p1">青海湖</span><br/>
+                    <span class="p2">中国最大的内陆湖泊</span><br/>
+                    <span class="p2"> 烟波浩淼、碧波连天</span>
+                </p>
+            </div>
+        </li>
+		<li>
+        	<div class="in">
+            	<img width="100" height="100" src="images/scenery/weizhoudao.jpg" />
+                <p class="pTxt"><span class="p1">涠洲岛</span><br/>
+                    <span class="p2">中国最大的火山岛</span><br/>
+                    <span class="p2"> 人间奇观 南海蓬莱</span>
+                </p>
+            </div>
+        </li>
+		<li>
+        	<div class="in">
+            	<img width="100" height="100" src="images/scenery/baojialiya.jpg" />
+                <p class="pTxt"><span class="p1">保加利亚</span><br/>
+                    <span class="p2">生如夏花</span><br/>
+                    <span class="p2">谁也无法掩盖这里的鲜花和笑脸</span>
+                </p>
+            </div>
+        </li>
+	</ul>
+	<ul>
+		<li>
+        	<div class="in">
+            	<img width="100" height="100" src="images/scenery/puluowangsi.jpg" />
+                <p class="pTxt"><span class="p1">普罗旺斯</span><br/>
+                    <span class="p2">上帝之宠</span><br/>
+                    <span class="p2">把世界上的色彩用尽</span>
+                </p>
+            </div>
+        </li>
+		<li>
+        	<div class="in">
+            	<img width="100" height="100" src="images/scenery/anshun.jpg" />
+                 <p class="pTxt"><span class="p1">安顺</span><br/>
+                    <span class="p2">慢慢旅行</span><br/>
+                    <span class="p2">贵州第一胜景---黄果树之旅 </span>
+                </p>
+            </div>
+        </li>
+		<li>
+        	<div class="in">
+            	<img width="100" height="100" src="images/scenery/xiaweiyi.jpg" />
+                 <p class="pTxt"><span class="p1">夏威夷</span><br/>
+                    <span class="p2">带你去吹风</span><br/>
+                    <span class="p2">海洋 热带雨林 岩浆交汇的夏威夷  </span>
+                </p>
+            </div>
+        </li>
+		<li>
+        	<div class="in">
+            	<img width="100" height="100" src="images/scenery/maerdaifu.jpg" />
+                <p class="pTxt"><span class="p1">马尔代夫</span><br/>
+                    <span class="p2">说走就走</span><br/>
+                    <span class="p2">马尔代夫—上帝撒落在印度洋上的珍珠</span>
+                </p>
+            </div>
+        </li>
+		<li>
+        	<div class="in">
+            	<img width="100" height="100" src="images/scenery/qingdao.jpg" />
+              <p class="pTxt"><span class="p1">青岛</span><br/>
+                    <span class="p2">海滨之城</span><br/>
+                    <span class="p2">一个美丽与现代化交织的城市</span>
+                </p>
+            </div>
+        </li>
+		<li>
+        	<div class="in">
+            	<img width="100" height="100" src="images/scenery/saisheer.jpg" />
+                <p class="pTxt"><span class="p1">塞舌尔</span><br/>
+                    <span class="p2">最后的处女地</span><br/>
+                    <span class="p2">梦想中的城堡 千变万化的珊瑚礁</span>
+                </p>
+            </div>
+        </li>
+		<li>
+        	<div class="in">
+            	<img width="100" height="100" src="images/scenery/beihai.jpg" />
+                <p class="pTxt"><span class="p1">北海</span><br/>
+                    <span class="p2">邂逅美丽</span><br/>
+                    <span class="p2">行进在青山绿水之间 畅游北海</span>
+                </p>
+                
+            </div>
+        </li>
+	</ul>
+	<ul>
+		<li></li>
+		<li>
+        	<div class="in">
+            	<img width="100" height="100" src="images/scenery/xizang.jpg" />
+               <p class="pTxt"><span class="p1">西藏</span><br/>
+                    <span class="p2">最想去的地方</span><br/>
+                    <span class="p2">独特的高原雪域风光,妩媚的南国风采</span>
+                </p>
+            </div>
+        </li>
+		<li>
+        	<div class="in">
+            	<img width="100" height="100" src="images/scenery/gulangyu.jpg" />
+               <p class="pTxt"><span class="p1">鼓浪屿</span><br/>
+                    <span class="p2">厦门之海</span><br/>
+                    <span class="p2">万国建筑博物馆 音乐之岛</span>
+                </p>
+            </div>
+        </li>
+		<li>
+        	<div class="in">
+            	<img width="100" height="100" src="images/scenery/xibanya.jpg" />
+               <p class="pTxt"><span class="p1">西班牙</span><br/>
+                    <span class="p2">地中海的浪漫呼唤</span><br/>
+                    <span class="p2">夏季结伴 走进【西班牙】童话之旅</span>
+                </p>
+            </div>
+        </li>
+		<li>
+        	<div class="in">
+            	<img width="100" height="100" src="images/scenery/lijiang.jpg" />
+                <p class="pTxt"><span class="p1">丽江</span><br/>
+                    <span class="p2">彩云之南</span><br/>
+                    <span class="p2">走进美丽的丽江 仿佛走进人间天堂</span>
+                </p>
+            </div>
+        </li>
+		<li>
+        	<div class="in">
+            	<img width="100" height="100" src="images/scenery/taiwan.jpg" />
+                  <p class="pTxt"><span class="p1">台湾</span><br/>
+                    <span class="p2">台东小吃</span><br/>
+                    <span class="p2">台湾夜市—让你口水直流的小吃</span>
+                </p>
+            </div>
+        </li>
+		<li></li>
+	</ul>
+	<ul>
+		<li></li>
+		<li></li>
+		<li>
+        	<div class="in">
+            	<img width="100" height="100" src="images/scenery/bingdao.jpg" />
+                 <p class="pTxt"><span class="p1">冰岛</span><br/>
+                    <span class="p2">冰如其名</span><br/>
+                    <span class="p2">想去月球太遥远，那就来冰岛吧！</span>
+                </p>
+            </div>
+        </li>
+		<li>
+        	<div class="in">
+            	<img width="100" height="100" src="images/scenery/wuyouni.jpg" />
+                <p class="pTxt"><span class="p1">乌尤尼盐沼</span><br/>
+                    <span class="p2">那一抹最爱的蓝玻利维亚</span><br/>
+                    <span class="p2">拥有美到极致的自然风光—天空之镜</span>
+                </p>
+            </div>
+        </li>
+		<li>
+        	<div class="in">
+            	<img width="100" height="100" src="images/scenery/daxidi.jpg" />
+                <p class="pTxt"><span class="p1">大溪地</span><br/>
+                    <span class="p2">黑珍珠的诱惑</span><br/>
+                    <span class="p2">上帝遗失在南太平洋上的珍珠项链</span>
+                </p>
+            </div>
+        </li>
+		<li></li>
+		<li></li>
+	</ul>
+	<ul>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li>
+        	<div class="in">
+            	<img width="100" height="100" src="images/scenery/yangshuo.jpg" />
+               <p class="pTxt"><span class="p1">阳朔</span><br/>
+                    <span class="p2">桂林的高山,阳朔的流水</span><br/>
+                    <span class="p2">桂林山水甲天下 阳朔山水甲桂林 </span>
+                </p>
+            </div>
+        </li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>
+					
+				</div>
+				
+			</article>
+		</div>
+	</div>
+	<div class="body4">
+		<div class="main">
+			<article id="content2">
+				<div class="wrapper">
+					<section class="col3">
+						<h4>加入我们</h4>
+						<ul class="list1">
+							<li><a href="#">新气息</a></li>
+							<li><a href="#">网站建设中</a></li>
+							<li><a href="#">大学毕业生</a></li>
+							<li><a href="#">web前端</a></li>
+						</ul>
+					</section>
+					<section class="col3 pad_left2">
+						<h4>地址</h4>
+						<ul class="address">
+							<li><span>Country:</span>中国</li>
+							<li><span>City:</span>青岛</li>
+							<li><span>Phone:</span>18254247991</li>
+							<li><span>Email:</span><a href="mailto:">sdzhuhongdan@gmail.com</a></li>
+						</ul>
+					</section>
+					<section class="col3 pad_left2">
+						<h4>关注我们</h4>
+						<ul id="icons">
+							<li><a href="#"><img src="images/xinlang.png" alt="">新浪微博</a></li>
+							<li><a href="#"><img src="images/tengxun.png" alt="">腾讯微博</a></li>
+							<li><a href="#"><img src="images/renren.png" alt="">人人网</a></li>
+							<li><a href="#"><img src="images/weixin.jpg" alt="">微信</a></li>
+							<li><a href="#"><img src="images/kongjian.png" alt="">空间</a></li>
+						</ul>
+					</section>
+					<section class="col2 right">
+						<h4>订阅</h4>
+						<form id="newsletter" method="post">
+							<div>
+								<div class="wrapper">
+									<input class="input" type="text" value="留下您的常用邮箱"  onblur="if(this.value=='') this.value='留下您的常用邮箱'" onfocus="if(this.value =='留下您的常用邮箱' ) this.value=''" >
+								</div>
+								<a href="#" class="button" onclick="document.getElementById('newsletter').submit()">订阅</a>
+							</div>
+						</form>
+					</section>
+				</div>
+			</article>
+<!-- content end -->
+		</div>
+	</div>
+		<div class="main">
+<!-- footer -->
+			
+<!-- footer end -->
+		</div>
+
+</body>
+</html>
